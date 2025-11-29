@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJR Business Management - Nzega Miaisela</title>
+    <meta name="description" content="AJR Business Management - Huduma za Digital Production, Digital Printing, Biashara Consultancy & Motor Vehicle Solutions huko Nzega Tabora">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --yellow: #FFC107;
+            --blue: #1E88E5;
+            --white: #ffffff;
+            --dark: #212121;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1557426272-fc4fbd45be4b?ixlib=rb-4.0.3&auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            color: var(--yellow);
+        }
+        h2 {
+            text-align: center;
+            margin: 50px 0 30px;
+            font-size: 2.2rem;
+            color: var(--blue);
+        }
+        .section-title {
+            color: var(--blue);
+            position: relative;
+            display: inline-block;
+        }
+        .section-title:after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: var(--yellow);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: 0.3s;
+            border-top: 5px solid var(--blue);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        .service-card h3 {
+            color: var(--blue);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            border-bottom: 3px solid var(--yellow);
+            padding-bottom: 10px;
+        }
+        .service-card ul {
+            list-style: none;
+        }
+        .service-card ul li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+        .service-card ul li:before {
+            content: '✓';
+            color: var(--yellow);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .contact {
+            background: var(--blue);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .contact h2 {
+            color: var(--yellow);
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            font-size: 1.2rem;
+        }
+        .contact-info a {
+            color: var(--yellow);
+            text-decoration: none;
+        }
+        .social-icons {
+            margin-top: 30px;
+        }
+        .social-icons a {
+            font-size: 2rem;
+            margin: 0 15px;
+            color: var(--yellow);
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .contact-info { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>AJR BUSINESS MANAGEMENT</h1>
+            <p style="font-size:1.4rem;">Huduma Bora za Biashara, Printing, Consultancy & Motor Vehicle Solutions</p>
+            <p style="margin-top:20px; font-size:1.3rem;">Tupo Nzega - Mwaisela</p>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2 class="section-title">Huduma Zetu</h2>
+        
+        <div class="services">
+            <!-- Kundi la 1 -->
+            <div class="service-card">
+                <h3>1. AJR Digital Production</h3>
+                <ul>
+                    <li>Upigaji picha & video za location na matukio</li>
+                    <li>Social media posters</li>
+                    <li>Logo designing</li>
+                    <li>Flyer & poster designing</li>
+                    <li>Event branding</li>
+                    <li>Company profile</li>
+                    <li>Promotion items design</li>
+                    <li>Letterhead & banner designing</li>
+                    <li>Social media management</li>
+                    <li>Business cards</li>
+                </ul>
+            </div>
+
+            <!-- Kundi la 2 -->
+            <div class="service-card">
+                <h3>2. AJR Digital Printing</h3>
+                <ul>
+                    <li>T-shirt printing</li>
+                    <li>Picha kwenye mbao, chupa, vikombe na sahani</li>
+                    <li>Mabango ya aina zote (3D & 2D)</li>
+                    <li>Vitambulisho & business cards</li>
+                    <li>Mashuka, madueti na nguo nyingine</li>
+                    <li>Vipeperushi</li>
+                    <li>Stickers za milango na bajaji</li>
+                    <li>Kadi za mialiko mbalimbali</li>
+                </ul>
+            </div>
+
+            <!-- Kundi la 3 -->
+            <div class="service-card">
+                <h3>3. AJR Consultant</h3>
+                <ul>
+                    <li>Usajili wa TIN (vikundi & taasisi)</li>
+                    <li>Makadirio ya kodi & SDI</li>
+                    <li>Kuandaa vitabu vya hesabu</li>
+                    <li>Usajili wa leseni zote & jina la biashara</li>
+                    <li>Usajili wa kampuni</li>
+                    <li>Ukaguzi wa hesabu za nje</li>
+                    <li>Leseni za udereva & kubadili kadi za gari</li>
+                    <li>Kukata bima & Annual return BRELA</li>
+                    <li>Ushauri wa kikodi</li>
+                </ul>
+            </div>
+
+            <!-- Kundi la 4 -->
+            <div class="service-card">
+                <h3>4. AJR Motor Solution</h3>
+                <ul>
+                    <li>Usajili wa vyombo vya moto</li>
+                    <li>Kurenew leseni za gari</li>
+                    <li>Leseni ya mafunzo (Lena)</li>
+                    <li>Mabadiliko ya umiliki, idadi ya viti, rangi</li>
+                    <li>Kubadili gari ya biashara kuwa binafsi</li>
+                    <li>Usajili TRA & kusimamisha gari kwa muda</li>
+                    <li>Kufuta kabisa gari kwenye mfumo</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Wasiliana Nasi</h2>
+            <p style="font-size:1.3rem; margin-top:20px;">Tupo tayari kukuhudumia wakati wowote!</p>
+            
+            <div class="contact-info">
+                <div><i class="fas fa-map-marker-alt"></i> Nzega - Mwaisela, Tabora</div>
+                <div><i class="fas fa-phone"></i> <a href="tel:0746295551">0746 295 551</a></div>
+                <div><i class="fab fa-whatsapp"></i> <a href="https://wa.me/255746295551">0746 295 551</a></div>
+                <div><i class="fas fa-envelope"></i> <a href="mailto:ajrbusinessmanagement@gmail.com">ajrbusinessmanagement@gmail.com</a></div>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://instagram.com/ajr.digital_production" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/255746295551" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AJR Business Management. All rights reserved. | Rangi za Kampuni: Njano, Nyeupe & Blue</p>
+    </footer>
+
+</body>
+</html>
